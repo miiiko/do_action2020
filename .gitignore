@@ -20,6 +20,7 @@ wp-signup.php
 wp-trackback.php
 xmlrpc.php
 wp-content/plugins
+wp-content/languages/
 wp-content/themes/twentynineteen
 wp-content/themes/twentyseventeen
 wp-content/themes/twentytwenty/package-lock.json
