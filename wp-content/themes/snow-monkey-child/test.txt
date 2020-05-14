@@ -1,2 +1,1 @@
-/snow-monkey/
-└ /snow-monkey-child/
+/snow-monkey-child
