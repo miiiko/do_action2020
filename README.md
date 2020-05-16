@@ -17,3 +17,6 @@
 ## SCSSコンパイラ
 Live Sass Compiler  
 参考：https://github.com/ritwickdey/vscode-live-sass-compiler/blob/master/docs/settings.md
+
+## 備考
+親テーマ「Snow Monkey」は各自ローカルに入れてください
