@@ -1,0 +1,16 @@
+@import "_vars.scss";
+@import "_config.scss";
+
+@mixin minwidth(){
+	min-width: initial;
+	@media all and (-ms-high-contrast: none){
+		min-width: none;
+	}
+}
+
+@mixin maxwidth(){
+	max-width: initial;
+	@media all and (-ms-high-contrast: none){
+		max-width: none;
+	}
+}

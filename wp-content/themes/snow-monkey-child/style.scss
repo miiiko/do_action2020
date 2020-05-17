@@ -14,28 +14,8 @@
 */
 
 @import "_vars.scss";
+@import "_mixin.scss";
 
-@import url(//fonts.googleapis.com/earlyaccess/notosansjp.css);
-
-html[lang="ja"] body {
-  color: $txt;
-  font-family: "Noto Sans JP", sans-serif;
-  line-height: 1.8;
-  font-size: 1.2em;
-}
-
-a {
-  color: $txt;
-  text-decoration: none;
-  &:hover{
-		opacity: .7;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
-		-webkit-transition: linear .5s;
-		transition: linear .5s;
-  }
-}
 .c-block-front {
   .p-hl--frontpage {
       border-left: none;
@@ -56,4 +36,37 @@ a {
 // link color
 .c-drawer, .c-drawer a {
 	color: $c-txt-base;
+}
+
+
+//footer
+body:not([style*="margin-bottom"]) {
+  .l-footer{
+    .c-copyright{
+      background: inherit;
+      border-top: 1px solid $c-txt-base;
+      padding: 0;
+      .c-container{
+        padding: 0;
+        @include maxwidth();
+        .footlogo{
+          padding: calc(var(--_space, 1.76923rem)*1.0) 1.76923rem;
+          @media screen and (min-width: 1024px) {
+            padding: calc(var(--_space, 1.76923rem)*1.5) 1.76923rem;
+          }
+          img{
+            width: 18%;
+            @media screen and (min-width: 1024px) {
+              width: 10%;
+            }
+          }
+        }
+      }
+    }
+    .c-copyright small{
+      background-color: $c-txt-base;
+      display: block;
+      padding: calc(var(--_space, 1.76923rem)*0.2) 1.76923rem ;
+    }
+  }
 }

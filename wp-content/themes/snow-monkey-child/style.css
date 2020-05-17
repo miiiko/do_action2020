@@ -12,27 +12,6 @@
  Tags: editor-style, featured-images
  Text Domain:  snow-monkey-child
 */
-@import url(//fonts.googleapis.com/earlyaccess/notosansjp.css);
-html[lang="ja"] body {
-  color: rgba(0, 0, 0, 0.87);
-  font-family: "Noto Sans JP", sans-serif;
-  line-height: 1.8;
-  font-size: 1.2em;
-}
-
-a {
-  color: rgba(0, 0, 0, 0.87);
-  text-decoration: none;
-}
-
-a:hover {
-  opacity: .7;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: linear .5s;
-  transition: linear .5s;
-}
-
 .c-block-front .p-hl--frontpage {
   border-left: none;
   border-bottom: 1px solid #272727;
@@ -55,5 +34,48 @@ a:hover {
 
 .c-drawer, .c-drawer a {
   color: #272727;
+}
+
+body:not([style*="margin-bottom"]) .l-footer .c-copyright {
+  background: inherit;
+  border-top: 1px solid #272727;
+  padding: 0;
+}
+
+body:not([style*="margin-bottom"]) .l-footer .c-copyright .c-container {
+  padding: 0;
+  max-width: initial;
+}
+
+@media all and (-ms-high-contrast: none) {
+  body:not([style*="margin-bottom"]) .l-footer .c-copyright .c-container {
+    max-width: none;
+  }
+}
+
+body:not([style*="margin-bottom"]) .l-footer .c-copyright .c-container .footlogo {
+  padding: calc(var(--_space, 1.76923rem)*1.0) 1.76923rem;
+}
+
+@media screen and (min-width: 1024px) {
+  body:not([style*="margin-bottom"]) .l-footer .c-copyright .c-container .footlogo {
+    padding: calc(var(--_space, 1.76923rem)*1.5) 1.76923rem;
+  }
+}
+
+body:not([style*="margin-bottom"]) .l-footer .c-copyright .c-container .footlogo img {
+  width: 18%;
+}
+
+@media screen and (min-width: 1024px) {
+  body:not([style*="margin-bottom"]) .l-footer .c-copyright .c-container .footlogo img {
+    width: 10%;
+  }
+}
+
+body:not([style*="margin-bottom"]) .l-footer .c-copyright small {
+  background-color: #272727;
+  display: block;
+  padding: calc(var(--_space, 1.76923rem)*0.2) 1.76923rem;
 }
 /*# sourceMappingURL=style.css.map */
