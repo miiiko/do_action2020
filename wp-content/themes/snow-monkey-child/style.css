@@ -32,4 +32,28 @@ a:hover {
   -webkit-transition: linear .5s;
   transition: linear .5s;
 }
+
+.c-block-front .p-hl--frontpage {
+  border-left: none;
+  border-bottom: 1px solid #272727;
+  background-color: inherit;
+  color: #272727;
+}
+
+.c-block-front .smb-items__banner {
+  background-color: inherit;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.c-block-front .smb-items__banner__title {
+  height: 50%;
+  padding: 2em 0;
+  color: #272727;
+}
+
+.c-drawer, .c-drawer a {
+  color: #272727;
+}
 /*# sourceMappingURL=style.css.map */

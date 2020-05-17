@@ -36,3 +36,24 @@ a {
 		transition: linear .5s;
   }
 }
+.c-block-front {
+  .p-hl--frontpage {
+      border-left: none;
+      border-bottom: 1px solid $c-txt-base;
+      background-color: inherit;
+      color: $c-txt-base;
+  }
+  .smb-items__banner {
+    background-color: inherit;
+    justify-content: flex-end;
+  }
+  .smb-items__banner__title {
+    height: 50%;
+    padding: 2em 0;
+    color: $c-txt-base;
+  }
+}
+// link color
+.c-drawer, .c-drawer a {
+	color: $c-txt-base;
+}
