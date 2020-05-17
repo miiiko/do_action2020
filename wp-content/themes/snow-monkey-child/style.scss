@@ -70,3 +70,29 @@ body:not([style*="margin-bottom"]) {
     }
   }
 }
+
+//activity_home
+.p-torikumi{
+	.c-container{
+		max-width:800px;
+	}
+	.smb-items__banner{
+		background:transparent;
+	}
+	.smb-items__banner__title{
+		top:68%;
+		color:$c-txt-base;
+		font-size:1.6rem;
+		font-weight:bold;
+		position:absolute;
+	}
+	.etc .smb-items__banner__title{
+		top:80%;
+	}
+	@media screen and (max-width:1023px){
+		.c-container{
+			min-width:400px;
+			width:60%;
+		}
+	}
+}
