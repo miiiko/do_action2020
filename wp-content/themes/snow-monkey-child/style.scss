@@ -37,6 +37,9 @@
 .c-drawer, .c-drawer a {
   color: $c-txt-base;
   line-height: 3;
+  @media screen and (min-width: 1024px) {
+    line-height: initial;
+  }
 }
 
 //hamburger
@@ -46,6 +49,18 @@
       display: none;
     }
   }
+}
+
+.c-input-group{
+  &__field > input[type="search"]{
+    background: rgba(142, 142, 147, .24);
+    border: none;
+    box-shadow: none;
+  }
+}
+.p-search-form .c-input-group__btn{
+  background: rgba(142, 142, 147, .24);
+  left: 0;
 }
 
 

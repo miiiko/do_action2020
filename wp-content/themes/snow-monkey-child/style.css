@@ -37,8 +37,26 @@
   line-height: 3;
 }
 
+@media screen and (min-width: 1024px) {
+  .c-drawer, .c-drawer a {
+    line-height: initial;
+  }
+}
+
 .c-container .c-hamburger-btn .c-hamburger-btn__label {
   display: none;
+}
+
+.c-input-group__field > input[type="search"] {
+  background: rgba(142, 142, 147, 0.24);
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.p-search-form .c-input-group__btn {
+  background: rgba(142, 142, 147, 0.24);
+  left: 0;
 }
 
 .main_ttl:after {
