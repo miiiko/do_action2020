@@ -42,6 +42,15 @@
   }
 }
 
+//gnav
+.p-global-nav{
+ .c-navbar__item[data-active-menu="true"] > a{
+  span{
+    color: #5D676E;
+  }
+ }
+}
+
 //hamburger
 .c-container{
   .c-hamburger-btn{
@@ -61,6 +70,7 @@
 .p-search-form .c-input-group__btn{
   background: rgba(142, 142, 147, .24);
   left: 0;
+  border: none;
 }
 
 
