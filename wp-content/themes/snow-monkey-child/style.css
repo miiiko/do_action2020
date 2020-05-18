@@ -34,6 +34,7 @@
 
 .c-drawer, .c-drawer a {
   color: #272727;
+  line-height: 3;
 }
 
 .c-container .c-hamburger-btn .c-hamburger-btn__label {
