@@ -38,6 +38,16 @@
 	color: $c-txt-base;
 }
 
+//hamburger
+.c-container{
+  .c-hamburger-btn{
+    .c-hamburger-btn__label{
+      display: none;
+    }
+  }
+}
+
+
 //top mainvisual 
 .main_ttl{
   &:after{

@@ -36,6 +36,10 @@
   color: #272727;
 }
 
+.c-container .c-hamburger-btn .c-hamburger-btn__label {
+  display: none;
+}
+
 .main_ttl:after {
   content: '';
   background: url(./img/top_scroll.svg) no-repeat center bottom/cover;
