@@ -64,6 +64,10 @@
   border: none;
 }
 
+.l-container .c-page-top {
+  background: #272727;
+}
+
 .main_ttl:after {
   content: '';
   background: url(./img/top_scroll.svg) no-repeat center bottom/cover;
