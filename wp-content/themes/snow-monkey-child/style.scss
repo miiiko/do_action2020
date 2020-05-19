@@ -218,18 +218,25 @@ body:not([style*="margin-bottom"]) {
       font-weight: 500;
       letter-spacing: .06em;
       position: absolute;
-      top: 23%;
-      left: -10%;
+      left: -18%;
+      top: 17%;
       transform: rotate(-90deg);
+      @media screen and (min-width:1024px){
+        left: -10%;
+        top: 23%;
+      }
       &:before{
         content: '';
         display: block;
         background: url(./img/ttl_arrow.svg) no-repeat top center / cover;
-        width: 10px;
-        height: 180px;
+        width: 177px;
+        height: 12px;
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 70%;
+        left: -55%;
+        @media screen and (min-width:1024px){
+          top: 80%;
+        }
       }
     }
     .smb-section__body{
