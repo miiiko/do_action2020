@@ -45,6 +45,114 @@
 
 .c-drawer, .c-drawer a {
   color: #272727;
+  line-height: 3;
+}
+
+@media screen and (min-width: 1024px) {
+  .c-drawer, .c-drawer a {
+    line-height: initial;
+  }
+}
+
+.p-global-nav .c-navbar__item[data-active-menu="true"] > a span {
+  color: #5D676E;
+}
+
+.c-container .c-hamburger-btn .c-hamburger-btn__label {
+  display: none;
+}
+
+.c-input-group__field > input[type="search"] {
+  background: rgba(142, 142, 147, 0.24);
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.p-search-form .c-input-group__btn {
+  background: rgba(142, 142, 147, 0.24);
+  left: 0;
+  border: none;
+}
+
+.l-container .c-page-top {
+  background: #272727;
+}
+
+.main_ttl:after {
+  content: '';
+  background: url(./img/top_scroll.svg) no-repeat center bottom/cover;
+  display: block;
+  width: 5vw;
+  height: 19vw;
+  max-width: 21px;
+  max-height: 83px;
+  position: absolute;
+  left: 50%;
+  bottom: 1%;
+  z-index: 10;
+}
+
+.main_ttl .c-container .smb-section__title {
+  color: #272727;
+  font-weight: 400;
+  display: inline;
+  line-height: 2;
+  background: white;
+  font-size: 2rem;
+}
+
+.main_ttl .c-container .smb-section__title:after {
+  content: none;
+}
+
+.main_ttl .c-container .smb-section__body {
+  margin-left: auto;
+}
+
+.main_ttl .c-container .smb-section__body .donate_bottom {
+  text-align: right;
+  background: url("./img/donate_bg.png") no-repeat center center/cover;
+  width: 43vw;
+  height: 43vw;
+  max-width: 180px;
+  max-height: 180px;
+  position: relative;
+  margin-left: auto;
+  margin-top: 40%;
+}
+
+@media screen and (min-width: 1024px) {
+  .main_ttl .c-container .smb-section__body .donate_bottom {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+
+.main_ttl .c-container .smb-section__body .donate_bottom .wp-block-button__link {
+  color: #272727;
+  font-weight: bold;
+  background: unset;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: block;
+  text-align: left;
+  line-height: 1.5;
+  padding: 0 1.2rem;
+}
+
+.main_ttl .c-container .smb-section__body .donate_bottom .wp-block-button__link:after {
+  content: '';
+  display: inline-block;
+  background: url(./img/donate_arrow.svg) no-repeat center center/cover;
+  width: 3em;
+  height: .6em;
+  margin-left: .7em;
+  margin-bottom: .2em;
 }
 
 body:not([style*="margin-bottom"]) .l-footer .c-copyright {
