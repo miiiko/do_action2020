@@ -19,6 +19,8 @@
 // frontpage_headline
 .c-block-front {
   margin-top: 4rem !important;
+  margin-right: auto;
+  margin-left: auto;
 }
 .c-headline-area {
   position: relative;
@@ -198,27 +200,49 @@ body:not([style*="margin-bottom"]) {
 
 //activity_home
 .p-torikumi{
-	.c-container{
-		max-width:800px;
-	}
+  .c-container {
+    max-width: 64%;
+  }
+  .smb-section__title {
+    display: block;
+    font-size: 1.5rem;
+    color: $c-txt-base;
+    background: $white;
+
+    &::after {
+      display: none;
+    }
+  }
+  .smb-section__body {
+    margin-right: auto;
+    margin-left: auto;
+  }
 	.smb-items__banner{
 		background:transparent;
 	}
 	.smb-items__banner__title{
-		top:68%;
+		top:66%;
 		color:$c-txt-base;
-		font-size:1.6rem;
+    font-size: 3.8vw;
 		font-weight:bold;
 		position:absolute;
 	}
 	.etc .smb-items__banner__title{
 		top:80%;
-	}
-	@media screen and (max-width:1023px){
+  }
+	@media screen and (min-width:1024px){
 		.c-container{
-			min-width:400px;
-			width:60%;
-		}
+			max-width:800px;
+    }
+    .smb-section__title {
+      padding: .25em;
+    }
+    .smb-section__body {
+      width: 100%;
+    }
+    .smb-items__banner__title{
+      font-size: 1.6rem;
+    }
 	}
 }
 
