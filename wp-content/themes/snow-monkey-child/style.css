@@ -269,7 +269,13 @@ body:not([style*="margin-bottom"]) .l-footer .c-copyright small {
 }
 
 .about .c-container .smb-section__body p {
-  padding: 0 2% 0 6%;
+  padding: 0 3% 0 15%;
+}
+
+@media screen and (min-width: 1024px) {
+  .about .c-container .smb-section__body p {
+    padding: 0 2% 0 6%;
+  }
 }
 
 .p-torikumi .c-container {
