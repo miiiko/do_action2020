@@ -93,7 +93,7 @@
   }
 }
 
-//top mainvisual 
+//top mainvisual
 .main_ttl{
   &:after{
     content: '';
@@ -301,3 +301,7 @@ body:not([style*="margin-bottom"]) {
 .u-align-right {
   text-align: right !important;
 }
+
+// activity
+.activity_bg_themec a{background-color:$white;}
+.activity_bg_whitec a{background-color:$c-main-500;}
