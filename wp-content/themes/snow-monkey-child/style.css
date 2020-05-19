@@ -12,24 +12,37 @@
  Tags: editor-style, featured-images
  Text Domain:  snow-monkey-child
 */
-.c-block-front .p-hl--frontpage {
+.c-block-front {
+  margin-top: 4rem !important;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c-headline-area {
+  position: relative;
+  margin-top: 4rem;
+  min-height: 11rem;
+}
+
+.c-headline-area .p-hl--frontpage {
+  position: absolute;
+  top: 65%;
+  left: 0;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  min-width: 11rem;
+  padding: 0 0 .25em 0;
+  padding-bottom: .25em;
   border-left: none;
   border-bottom: 1px solid #272727;
   background-color: inherit;
   color: #272727;
-}
-
-.c-block-front .smb-items__banner {
-  background-color: inherit;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.c-block-front .smb-items__banner__title {
-  height: 50%;
-  padding: 2em 0;
-  color: #272727;
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: right;
+  line-height: 1;
 }
 
 .c-drawer, .c-drawer a {
@@ -247,7 +260,23 @@ body:not([style*="margin-bottom"]) .l-footer .c-copyright small {
 }
 
 .p-torikumi .c-container {
-  max-width: 800px;
+  max-width: 64%;
+}
+
+.p-torikumi .smb-section__title {
+  display: block;
+  font-size: 1.5rem;
+  color: #272727;
+  background: white;
+}
+
+.p-torikumi .smb-section__title::after {
+  display: none;
+}
+
+.p-torikumi .smb-section__body {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .p-torikumi .smb-items__banner {
@@ -255,9 +284,9 @@ body:not([style*="margin-bottom"]) .l-footer .c-copyright small {
 }
 
 .p-torikumi .smb-items__banner__title {
-  top: 68%;
+  top: 66%;
   color: #272727;
-  font-size: 1.6rem;
+  font-size: 3.8vw;
   font-weight: bold;
   position: absolute;
 }
@@ -266,10 +295,22 @@ body:not([style*="margin-bottom"]) .l-footer .c-copyright small {
   top: 80%;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 1024px) {
   .p-torikumi .c-container {
-    min-width: 400px;
-    width: 60%;
+    max-width: 800px;
   }
+  .p-torikumi .smb-section__title {
+    padding: .25em;
+  }
+  .p-torikumi .smb-section__body {
+    width: 100%;
+  }
+  .p-torikumi .smb-items__banner__title {
+    font-size: 1.6rem;
+  }
+}
+
+.u-align-right {
+  text-align: right !important;
 }
 /*# sourceMappingURL=style.css.map */
