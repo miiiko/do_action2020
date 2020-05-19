@@ -57,7 +57,7 @@
 }
 
 .p-global-nav .c-navbar__item[data-active-menu="true"] > a span {
-  color: #5D676E;
+  color: #1A5884;
 }
 
 .c-container .c-hamburger-btn .c-hamburger-btn__label {
@@ -78,7 +78,7 @@
 }
 
 .l-container .c-page-top {
-  background: #272727;
+  background: #1A5884;
 }
 
 .main_ttl:after {
