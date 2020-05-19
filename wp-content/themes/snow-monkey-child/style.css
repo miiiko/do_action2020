@@ -255,7 +255,7 @@ body:not([style*="margin-bottom"]) .l-footer .c-copyright small {
   text-align: right;
 }
 
-.about .c-container .smb-section__body .textbox {
+.about .c-container .smb-section__body p {
   padding: 0 2% 0 6%;
 }
 
