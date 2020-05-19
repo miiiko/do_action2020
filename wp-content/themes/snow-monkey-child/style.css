@@ -95,7 +95,7 @@
 
 @media screen and (min-width: 1024px) {
   .main_ttl .c-container .smb-section__title {
-    top: 20%;
+    top: 10vw;
     left: 10%;
   }
 }
@@ -181,12 +181,14 @@ body:not([style*="margin-bottom"]) .l-footer .c-copyright .c-container .footlogo
 }
 
 body:not([style*="margin-bottom"]) .l-footer .c-copyright .c-container .footlogo img {
-  width: 18%;
+  width: 10%;
+  max-width: 80px;
 }
 
 @media screen and (min-width: 1024px) {
   body:not([style*="margin-bottom"]) .l-footer .c-copyright .c-container .footlogo img {
     width: 10%;
+    max-width: 100px;
   }
 }
 
@@ -194,6 +196,28 @@ body:not([style*="margin-bottom"]) .l-footer .c-copyright small {
   background-color: #272727;
   display: block;
   padding: calc(var(--_space, 1.76923rem)*0.2) 1.76923rem;
+}
+
+#about .c-container {
+  padding: 0 10%;
+}
+
+@media screen and (min-width: 1024px) {
+  #about .c-container {
+    padding: 0 calc(var(--_container-margin, 1.76923rem) + env(safe-area-inset-right));
+  }
+}
+
+#about .c-container .smb-section__body .lead {
+  font-size: 24px;
+}
+
+#about .c-container .smb-section__body .lead_left {
+  margin-bottom: 10px;
+}
+
+#about .c-container .smb-section__body .lead_right {
+  text-align: right;
 }
 
 .p-torikumi .c-container {

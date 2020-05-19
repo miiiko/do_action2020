@@ -106,7 +106,7 @@
       position: relative;
       left: 3%;
       @media screen and (min-width: 1024px) {
-        top: 20%;
+        top: 10vw;
         left: 10%;
       }
       &:after{
@@ -175,9 +175,11 @@ body:not([style*="margin-bottom"]) {
             padding: calc(var(--_space, 1.76923rem)*1.5) 1.76923rem;
           }
           img{
-            width: 18%;
+            width: 10%;
+            max-width: 80px;
             @media screen and (min-width: 1024px) {
               width: 10%;
+              max-width: 100px;
             }
           }
         }
@@ -187,6 +189,27 @@ body:not([style*="margin-bottom"]) {
       background-color: $c-txt-base;
       display: block;
       padding: calc(var(--_space, 1.76923rem)*0.2) 1.76923rem ;
+    }
+  }
+}
+
+//about
+#about{
+  .c-container{
+    padding: 0 10%;
+    @media screen and (min-width: 1024px) {
+      padding: 0 calc(var(--_container-margin, 1.76923rem) + env(safe-area-inset-right));
+    }
+    .smb-section__body{
+      .lead{
+        font-size: 24px;
+        &_left{
+          margin-bottom: 10px;
+        }
+        &_right{
+          text-align: right;
+        }
+      }
     }
   }
 }
