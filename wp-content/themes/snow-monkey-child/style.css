@@ -198,26 +198,52 @@ body:not([style*="margin-bottom"]) .l-footer .c-copyright small {
   padding: calc(var(--_space, 1.76923rem)*0.2) 1.76923rem;
 }
 
-#about .c-container {
+.about .c-container {
   padding: 0 10%;
 }
 
 @media screen and (min-width: 1024px) {
-  #about .c-container {
+  .about .c-container {
     padding: 0 calc(var(--_container-margin, 1.76923rem) + env(safe-area-inset-right));
   }
 }
 
-#about .c-container .smb-section__body .lead {
+.about .c-container .smb-section__title {
+  font-size: 2.6rem;
+  font-weight: 500;
+  letter-spacing: .06em;
+  position: absolute;
+  top: 23%;
+  left: -10%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.about .c-container .smb-section__title:before {
+  content: '';
+  display: block;
+  background: url(./img/ttl_arrow.svg) no-repeat top center/cover;
+  width: 10px;
+  height: 180px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about .c-container .smb-section__body .lead {
   font-size: 24px;
 }
 
-#about .c-container .smb-section__body .lead_left {
+.about .c-container .smb-section__body .lead_left {
   margin-bottom: 10px;
 }
 
-#about .c-container .smb-section__body .lead_right {
+.about .c-container .smb-section__body .lead_right {
   text-align: right;
+}
+
+.about .c-container .smb-section__body .textbox {
+  padding: 0 2% 0 6%;
 }
 
 .p-torikumi .c-container {
