@@ -103,6 +103,12 @@
       line-height: 2;
       background: $white;
       font-size: 2rem;
+      position: relative;
+      left: 3%;
+      @media screen and (min-width: 1024px) {
+        top: 20%;
+        left: 10%;
+      }
       &:after{
         content: none;
       }
