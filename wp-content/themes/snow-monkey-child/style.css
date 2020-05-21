@@ -18,6 +18,10 @@
 	margin-left: auto;
 }
 
+.c-block-front .is-style-outline .wp-block-button__link {
+	border: 1px solid #272727;
+}
+
 .c-headline-area {
 	position: relative;
 	margin-top: 4rem;

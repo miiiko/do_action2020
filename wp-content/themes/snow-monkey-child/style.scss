@@ -21,6 +21,12 @@
   margin-top: 4rem !important;
   margin-right: auto;
   margin-left: auto;
+	.is-style-outline .wp-block-button__link{
+		border:1px solid $c-txt-base;
+	}
+}
+.c-block-front.p-contents{
+	// トップページ Contents部分のみ用
 }
 .c-headline-area {
   position: relative;
