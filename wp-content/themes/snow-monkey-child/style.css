@@ -295,13 +295,21 @@ body:not([style*="margin-bottom"]) .l-footer .c-copyright small {
 	}
 }
 
+.p-torikumi {
+	text-align: center;
+}
+
 .p-torikumi .c-container {
 	max-width: 64%;
 }
 
 .p-torikumi .smb-section__title {
-	display: block;
+	margin: auto;
+	padding-left: 0;
+	padding-right: 0;
+	display: inline-block;
 	font-size: 1.5rem;
+	font-weight: normal;
 	color: #272727;
 	background: white;
 }

@@ -271,15 +271,19 @@ body:not([style*="margin-bottom"]) {
 
 //activity_home
 .p-torikumi{
+	text-align:center;
   .c-container {
     max-width: 64%;
   }
   .smb-section__title {
-    display: block;
+		margin:auto;
+		padding-left:0;
+		padding-right:0;
+    display: inline-block;
     font-size: 1.5rem;
+		font-weight:normal;
     color: $c-txt-base;
     background: $white;
-
     &::after {
       display: none;
     }
