@@ -73,6 +73,10 @@
   border: none;
 }
 
+.l-body .c-drawer {
+  background-color: #bfd3de;
+}
+
 .main_ttl:after {
   content: '';
   background: url(./img/top_scroll.svg) no-repeat center bottom/cover;
