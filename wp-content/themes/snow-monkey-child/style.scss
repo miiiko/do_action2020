@@ -325,3 +325,15 @@ body:not([style*="margin-bottom"]) {
 // activity
 .activity_bg_themec a{background-color:$white;}
 .activity_bg_whitec a{background-color:$c-main-500;}
+
+// donate
+.c-flex-reverse .wp-block-columns{flex-direction:row-reverse;}
+.c-flex-normal, .c-flex-reverse{
+	@media screen and (max-width:599px){
+		figure{text-align:center;}
+		img{
+			width:80%;
+			margin:auto;
+		}
+	}
+}
