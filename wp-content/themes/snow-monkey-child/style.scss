@@ -21,6 +21,12 @@
   margin-top: 4rem !important;
   margin-right: auto;
   margin-left: auto;
+	.is-style-outline .wp-block-button__link{
+		border:1px solid $c-txt-base;
+	}
+}
+.c-block-front.p-contents{
+	// トップページ Contents部分のみ用
 }
 .c-headline-area {
   position: relative;
@@ -271,15 +277,19 @@ body:not([style*="margin-bottom"]) {
 
 //activity_home
 .p-torikumi{
+	text-align:center;
   .c-container {
     max-width: 64%;
   }
   .smb-section__title {
-    display: block;
+		margin:auto;
+		padding-left:0;
+		padding-right:0;
+    display: inline-block;
     font-size: 1.5rem;
+		font-weight:normal;
     color: $c-txt-base;
     background: $white;
-
     &::after {
       display: none;
     }
@@ -314,6 +324,49 @@ body:not([style*="margin-bottom"]) {
     .smb-items__banner__title{
       font-size: 1.6rem;
     }
+	}
+}
+
+// top_contact
+.p-top_contact{
+	.is-style-fill{
+		background-color:$white;
+		border:1px solid $c-txt-base;
+	}
+	.wp-block-button__link{
+		color:$c-txt-base;
+		background-color:transparent;
+		position:relative;
+		&::before{
+			width:31px;
+			height:21px;
+			margin-right:8px;
+			content:"";
+			background:url(img/icn_mail.svg) no-repeat center center /contain;
+			display:inline-block;
+			vertical-align:middle;
+		}
+	}
+	@media screen and (max-width:599px){
+		.c-container{
+			padding-left:0;
+			padding-right:0;
+		}
+		.c-row--margin > .c-row__col{
+			padding-left:0;
+			padding-right:0;
+		}
+		&.smb-section-break-the-grid--right .smb-section-break-the-grid__figure{
+			right:0;
+		}
+		.c-row__col--lg-1-2:nth-of-type(1){
+			text-align:center;
+			.smb-section-break-the-grid__content{
+				width:80%;
+				margin-left:auto;
+				margin-right:auto;
+			}
+		}
 	}
 }
 
