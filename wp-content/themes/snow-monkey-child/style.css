@@ -354,6 +354,49 @@ body:not([style*="margin-bottom"]) .l-footer .c-copyright small {
 	}
 }
 
+.p-top_contact .is-style-fill {
+	background-color: white;
+	border: 1px solid #272727;
+}
+
+.p-top_contact .wp-block-button__link {
+	color: #272727;
+	background-color: transparent;
+	position: relative;
+}
+
+.p-top_contact .wp-block-button__link::before {
+	width: 31px;
+	height: 21px;
+	margin-right: 8px;
+	content: "";
+	background: url(img/icn_mail.svg) no-repeat center center/contain;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+@media screen and (max-width: 599px) {
+	.p-top_contact .c-container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.p-top_contact .c-row--margin > .c-row__col {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.p-top_contact.smb-section-break-the-grid--right .smb-section-break-the-grid__figure {
+		right: 0;
+	}
+	.p-top_contact .c-row__col--lg-1-2:nth-of-type(1) {
+		text-align: center;
+	}
+	.p-top_contact .c-row__col--lg-1-2:nth-of-type(1) .smb-section-break-the-grid__content {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
 .u-align-right {
 	text-align: right !important;
 }
