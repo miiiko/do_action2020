@@ -14,3 +14,36 @@
 		max-width: none;
 	}
 }
+
+@mixin ttl_arrow(){
+  font-size: 2.6rem;
+    font-weight: 400;
+    position: absolute;
+    left: -18%;
+    transform: rotate(-90deg);
+    @media screen and (min-width:1024px){
+      left: -10%;
+    }
+    @media screen and (max-width:320px){
+      font-size: 1.9rem;
+    }
+    &:before{
+      content: '';
+      display: block;
+      background: url(./img/ttl_arrow.svg) no-repeat top center / cover;
+      width: 177px;
+      height: 12px;
+      position: absolute;
+      top: 70%;
+      @media screen and (min-width:1024px){
+        top: 80%;
+      }
+      @media screen and (max-width:320px){
+        width: 133px;
+        height: 9px;
+      }
+    }
+    &:after{
+      content: none;
+    }
+}

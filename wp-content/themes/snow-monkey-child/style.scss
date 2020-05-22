@@ -32,24 +32,41 @@
   position: relative;
   margin-top: 4rem;
   min-height: 11rem;
-
   .p-hl--frontpage {
-    position: absolute;
-    top: 65%;
-    left: 0;
-    transform-origin: left top;
-    transform: rotate(-90deg);
-    min-width: 11rem;
-    padding: 0 0 .25em 0;
-    padding-bottom: .25em;
+    @include ttl_arrow();
     border-left: none;
-    border-bottom: 1px solid $c-txt-base;
-    background-color: inherit;
     color: $c-txt-base;
-    font-size: 2rem;
-    font-weight: 300;
-    text-align: right;
-    line-height: 1;
+    line-height: 1.51282;
+    background-color: unset;
+    padding: 0;
+    margin-bottom: 0;
+  }
+}
+.news{
+  .c-headline-area {
+    .p-hl--frontpage {
+      left: -10%;
+      top: -30%;
+      @media screen and (max-width:320px){
+        left: -13%;
+      }
+      &:before{
+        left: -85%;
+      }
+    }
+  }
+}
+.contents{
+  .c-headline-area {
+    .p-hl--frontpage {
+      left: -19%;
+      @media screen and (max-width:320px){
+        left: -21%;
+      }
+      &:before{
+        left: -13%;
+      }
+    }
   }
 }
 // link color
@@ -216,29 +233,13 @@ body:not([style*="margin-bottom"]) {
       padding: 0 calc(var(--_container-margin, 1.76923rem) + env(safe-area-inset-right));
     }
     .smb-section__title{
-      font-size: 2.6rem;
-      font-weight: 500;
-      letter-spacing: .06em;
-      position: absolute;
-      left: -18%;
+      @include ttl_arrow();
       top: 17%;
-      transform: rotate(-90deg);
       @media screen and (min-width:1024px){
-        left: -10%;
         top: 23%;
       }
       &:before{
-        content: '';
-        display: block;
-        background: url(./img/ttl_arrow.svg) no-repeat top center / cover;
-        width: 177px;
-        height: 12px;
-        position: absolute;
-        top: 70%;
-        left: -55%;
-        @media screen and (min-width:1024px){
-          top: 80%;
-        }
+        left: -65%;
       }
     }
     .smb-section__body{
@@ -329,6 +330,7 @@ body:not([style*="margin-bottom"]) {
 
 // top_contact
 .p-top_contact{
+  padding-top: 15%;
 	.is-style-fill{
 		background-color:$white;
 		border:1px solid $c-txt-base;
@@ -346,7 +348,7 @@ body:not([style*="margin-bottom"]) {
 			display:inline-block;
 			vertical-align:middle;
 		}
-	}
+  }
 	@media screen and (max-width:599px){
 		.c-container{
 			padding-left:0;
@@ -367,7 +369,18 @@ body:not([style*="margin-bottom"]) {
 				margin-right:auto;
 			}
 		}
-	}
+  }
+  .smb-section__title{
+    @include ttl_arrow();
+    top: 5%;
+    &:before{
+      left: -30%;
+    }
+  }
+  .smb-section__body {
+    width: 180px;
+    margin: calc(var(--_space, 0.76923rem)*1*var(--_margin-scale, 1)) auto;
+  }
 }
 
 // utility
