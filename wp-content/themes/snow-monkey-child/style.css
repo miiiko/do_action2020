@@ -721,7 +721,8 @@ body:not([style*="margin-bottom"]) .l-footer .c-copyright small {
   }
 }
 
-.donate_ttl-2 {
+.c-container .smb-section__body .donate_ttl-2,
+.c-entry__body .p-entry-content .donate_ttl-2 {
   background-color: white;
   border-color: #272727;
 }

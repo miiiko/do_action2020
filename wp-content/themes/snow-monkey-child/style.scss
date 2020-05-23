@@ -479,8 +479,8 @@ body:not([style*="margin-bottom"]) {
 		}
 	}
 }
-
-.donate_ttl-2{
+.c-container .smb-section__body .donate_ttl-2,
+.c-entry__body .p-entry-content .donate_ttl-2 {
   background-color: $white;
   border-color: $c-txt-base;
 }
