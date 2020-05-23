@@ -720,4 +720,9 @@ body:not([style*="margin-bottom"]) .l-footer .c-copyright small {
     margin: auto;
   }
 }
+
+.donate_ttl-2 {
+  background-color: white;
+  border-color: #272727;
+}
 /*# sourceMappingURL=style.css.map */
