@@ -154,7 +154,7 @@
 .main_ttl{
   &:after{
     content: '';
-    background: url(./img/top_scroll.svg) no-repeat center bottom / cover;
+    background: url(./img/top_scroll.svg) no-repeat center bottom / contain;
     display: block;
     width: 5vw;
     height: 20vw;
