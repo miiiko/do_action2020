@@ -349,14 +349,15 @@ body:not([style*="margin-bottom"]) {
     max-width: 64%;
   }
   .smb-section__title {
-        margin:auto;
-        padding-left:0;
-        padding-right:0;
+    margin:auto;
+    padding-left:0;
+    padding-right:0;
     display: inline-block;
     font-size: 1.5rem;
-        font-weight:normal;
+    font-weight:normal;
     color: $c-txt-base;
     background: $white;
+
     &::after {
       display: none;
     }
@@ -365,18 +366,27 @@ body:not([style*="margin-bottom"]) {
     margin-right: auto;
     margin-left: auto;
   }
-    .smb-items__banner{
-        background:transparent;
-    }
-    .smb-items__banner__title{
-        top:66%;
-        color:$c-txt-base;
+  .smb-items__banner{
+    background:transparent;
+  }
+  .smb-items__banner__title{
+    top:64%;
+    color:$c-txt-base;
     font-size: 3.8vw;
-        font-weight:bold;
-        position:absolute;
+    font-weight:bold;
+    position:absolute;
+
+    &::after {
+      content: '';
+      display: block;
+      background: url(./img/donate_arrow.svg) no-repeat center center / contain;
+      width: 4em;
+      height: .9em;
+      margin: .8em auto;
     }
-    .etc .smb-items__banner__title{
-        top:80%;
+//    .etc .smb-items__banner__title{
+//        top:80%;
+//  }
   }
     @media screen and (min-width:1024px){
         .c-container{
