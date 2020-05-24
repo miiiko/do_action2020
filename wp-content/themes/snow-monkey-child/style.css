@@ -522,15 +522,20 @@ body:not([style*="margin-bottom"]) .l-footer .c-copyright small {
 }
 
 .p-torikumi .smb-items__banner__title {
-  top: 66%;
+  top: 64%;
   color: #272727;
   font-size: 3.8vw;
   font-weight: bold;
   position: absolute;
 }
 
-.p-torikumi .etc .smb-items__banner__title {
-  top: 80%;
+.p-torikumi .smb-items__banner__title::after {
+  content: '';
+  display: block;
+  background: url(./img/donate_arrow.svg) no-repeat center center/contain;
+  width: 4em;
+  height: .9em;
+  margin: .8em auto;
 }
 
 @media screen and (min-width: 1024px) {
