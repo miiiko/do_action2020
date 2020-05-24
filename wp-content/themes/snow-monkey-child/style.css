@@ -133,6 +133,15 @@
   left: -85%;
 }
 
+.news .c-entries .c-entries__item a {
+  height: 100%;
+  background-color: white;
+}
+
+.news .c-entries .c-entries__item a .c-entry-summary__body {
+  padding: 0 3% 3%;
+}
+
 @media screen and (min-width: 1230px) {
   .contents .c-container {
     max-width: 1230px;
