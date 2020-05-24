@@ -693,7 +693,7 @@ body:not([style*="margin-bottom"]) .l-footer .c-copyright small {
 }
 
 .p-top_contact .smb-section__body {
-  width: 13em;
+  width: 14em;
   margin: calc(var(--_space, 0.76923rem)*1*var(--_margin-scale, 1)) auto;
 }
 
