@@ -484,3 +484,9 @@ body:not([style*="margin-bottom"]) {
   background-color: $white;
   border-color: $c-txt-base;
 }
+
+.c-page-header[data-has-image="true"] .c-page-header__content {
+	padding: 1em 2em;
+	text-shadow: 0 0 3px rgba(26, 88, 132, 1);
+	background-color: rgba(26, 88, 132, .87)
+}
