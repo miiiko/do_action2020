@@ -248,6 +248,7 @@ body:not([style*="margin-bottom"]) {
           img{
             width: 10%;
             max-width: 80px;
+            min-width: 77px;
             @media screen and (min-width: 1024px) {
               width: 10%;
               max-width: 100px;
