@@ -468,10 +468,24 @@ body:not([style*="margin-bottom"]) .l-footer .c-copyright small {
 
 .about .c-container .smb-section__body .lead_left {
   margin-bottom: 10px;
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  .about .c-container .smb-section__body .lead_left {
+    display: inline;
+  }
 }
 
 .about .c-container .smb-section__body .lead_right {
   text-align: right;
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  .about .c-container .smb-section__body .lead_right {
+    display: inline;
+  }
 }
 
 .about .c-container .smb-section__body p {
