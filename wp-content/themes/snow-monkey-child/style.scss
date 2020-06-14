@@ -378,6 +378,7 @@ body:not([style*="margin-bottom"]) {
     margin-left: auto;
   }
   .smb-items__banner{
+		overflow: visible;
     background:transparent;
   }
   .smb-items__banner__title{
