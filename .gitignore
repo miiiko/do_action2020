@@ -8,7 +8,7 @@ readme.html
 wp-activate.php
 wp-blog-header.php
 wp-comments-post.php
-wp-config-sample.php
+wp-config*.php
 wp-config.php
 wp-cron.php
 wp-links-opml.php
@@ -19,10 +19,11 @@ wp-settings.php
 wp-signup.php
 wp-trackback.php
 xmlrpc.php
+wp-content/uploads
 wp-content/plugins
 wp-content/languages
-wp-content/themes/twentynineteen
-wp-content/themes/twentyseventeen
 wp-content/themes/twentytwenty
+wp-content/themes/twentytwentyone
 wp-content/themes/snow-monkey
 wp-content/updraft
+ht*.txt
